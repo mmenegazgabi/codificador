@@ -1,20 +1,14 @@
-public class CodificadorFactory{
-
-    public static Codificador createCod(int seg){
-         Codificador cod;
-        switch (seg){
-        case 1:
-            cod = new CodificadorSimples(); 
-            return cod;
-        case 5: 
-            cod = new CodificadorMedio(); 
-            return cod; 
-        case 10: 
-            cod = new CodificadorForte(); 
-            return cod; 
-        default: 
-            return null; 
+public class CodificadorFactory {
+    public Codificador getCodificador(int nivelSeguranca) {
+        switch(nivelSeguranca) {
+            case 1:
+                return new CodificadorSimples();
+            case 5:
+                return new CodificadorMedio();
+            case 10:
+                return new CodificadorForte();
+            default:
+                throw new IllegalArgumentException("Nível de segurança inválido: " + nivelSeguranca);
         }
-
     }
 }

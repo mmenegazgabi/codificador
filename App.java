@@ -1,10 +1,6 @@
-
 public class App {
     public static void main(String[] args) throws Exception {
-        new CodificadorFactory();
-        Codificador cod = CodificadorFactory.createCod(10); 
-        
-        
+        Codificador cod = new CodificadorFactory().getCodificador(5);           
 
         System.out.println("Codificador: "+cod.getNome());
         System.out.println("Versao: "+cod.getDataCriacao());
@@ -17,7 +13,5 @@ public class App {
         System.out.println("Texto original: "+texto);
         System.out.println("Texto codificado: "+codificado);
         System.out.println("Texto decodificado: "+decodificado);
-
-
     }
 }
