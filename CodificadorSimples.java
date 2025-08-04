@@ -32,4 +32,4 @@ public class CodificadorSimples implements Codificador {
         
         return encoded.toString();
     }
-}
+} 

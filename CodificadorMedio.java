@@ -6,7 +6,7 @@ public class CodificadorMedio implements Codificador {
     }
 
     public LocalDate getDataCriacao() {
-        return LocalDate.of(2004, 09, 03);
+        return LocalDate.of(2004, 07, 03);
     }
 
     public int getNivelSeguranca(){

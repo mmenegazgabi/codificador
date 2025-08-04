@@ -1,6 +1,9 @@
+import CodificadorFactory; 
 public class App {
     public static void main(String[] args) throws Exception {
-        Codificador cod = new CodificadorSimples();
+        Codificador cod = new CodificadorFactory().createCod(10); 
+        
+        
 
         System.out.println("Codificador: "+cod.getNome());
         System.out.println("Versao: "+cod.getDataCriacao());
@@ -13,5 +16,7 @@ public class App {
         System.out.println("Texto original: "+texto);
         System.out.println("Texto codificado: "+codificado);
         System.out.println("Texto decodificado: "+decodificado);
+
+
     }
 }
