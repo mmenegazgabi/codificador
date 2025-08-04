@@ -1,7 +1,8 @@
-import CodificadorFactory; 
+
 public class App {
     public static void main(String[] args) throws Exception {
-        Codificador cod = new CodificadorFactory().createCod(10); 
+        new CodificadorFactory();
+        Codificador cod = CodificadorFactory.createCod(10); 
         
         
 
